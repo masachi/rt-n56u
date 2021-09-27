@@ -2238,6 +2238,11 @@ ej_firmware_caps_hook(int eid, webs_t wp, int argc, char **argv)
 #else
 	int found_app_shadowsocks = 0;
 #endif
+#if defined(APP_ADGUARDHOME)
+	int found_app_adguardhome = 1;
+#else
+	int found_app_adguardhome = 0;
+#endif
 #if defined(APP_DNSFORWARDER)
 	int found_app_dnsforwarder = 1;
 #else
@@ -2414,6 +2419,7 @@ ej_firmware_caps_hook(int eid, webs_t wp, int argc, char **argv)
 		"function found_app_napt66() { return %d;}\n"
 		"function found_app_dnsforwarder() { return %d;}\n"
 		"function found_app_shadowsocks() { return %d;}\n"
+		"function found_app_adguardhome() { return %d;}\n"
 		"function found_app_xupnpd() { return %d;}\n"
 		"function found_app_mentohust() { return %d;}\n",
 		found_utl_hdparm,
@@ -2436,6 +2442,7 @@ ej_firmware_caps_hook(int eid, webs_t wp, int argc, char **argv)
 		found_app_napt66,
 		found_app_dnsforwarder,
 		found_app_shadowsocks,
+		found_app_adguardhome,
 		found_app_xupnpd,
 		found_app_mentohust
 	);
