@@ -458,7 +458,7 @@ if (found_app_mentohust()){
 } else menuL2_title.push("");
 
 if (found_app_adguardhome()){
-	menuL2_title.push("<#menu5_29#>");
+	menuL2_title.push("<#menu5_28#>");
 } else menuL2_title.push("");
 
 
