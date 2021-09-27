@@ -901,6 +901,7 @@ menu5_3_3=IPv6 协议
 menu5_3_4=端口映射 (UPnP)
 menu5_3_5=端口转发 (DMZ)
 menu5_3_6=动态域名解析
+menu5_3_7=AdGuardHome
 menu5_4_1=网上邻居
 menu5_4_2=FTP 共享
 menu5_4_3=一般设置
