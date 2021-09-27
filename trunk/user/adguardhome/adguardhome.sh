@@ -137,7 +137,7 @@ fi
 
 dl_adg(){
 logger -t "AdGuardHome" "下载AdGuardHome"
-cd /tmp/AdGuardHome && wget https://github.masachi.workers.dev/masachi/rt-n56u/blob/master/trunk/user/adguardhome/AdGuardHome
+cd /tmp/AdGuardHome && wget https://github.masachi.workers.dev/masachi/rt-n56u/raw/master/trunk/user/adguardhome/AdGuardHome
 # wget --no-check-certificate -O /tmp/AdGuardHome.tar.gz https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.101.0/AdGuardHome_linux_mipsle.tar.gz
 # curl -k -s -o /tmp/AdGuardHome/AdGuardHome --connect-timeout 10 --retry 3 https://cdn.jsdelivr.net/gh/chongshengB/rt-n56u/trunk/user/adguardhome/AdGuardHome
 if [ ! -f "/tmp/AdGuardHome/AdGuardHome" ]; then
