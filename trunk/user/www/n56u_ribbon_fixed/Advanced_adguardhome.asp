@@ -36,7 +36,7 @@ $j(document).ready(function() {
 <% login_state_hook(); %>
 
 function initial(){
-	show_banner(1);
+	show_banner(2);
 	show_menu(5,11);
 	show_footer();
 
