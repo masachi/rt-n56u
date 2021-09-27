@@ -36,9 +36,8 @@ $j(document).ready(function() {
 <% login_state_hook(); %>
 
 function initial(){
-	show_banner(2);
+	show_banner(1);
 	show_menu(5,16);
-	showmenu();
 	show_footer();
 
 }
@@ -53,10 +52,6 @@ function applyRule(){
 		
 		document.form.submit();
 //	}
-}
-
-function showmenu(){
-showhide_div('sdnslink', found_app_smartdns());
 }
 
 function done_validating(action){
