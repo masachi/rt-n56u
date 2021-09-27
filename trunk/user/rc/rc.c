@@ -949,6 +949,7 @@ init_router(void)
 	}
 	// system ready
 	system("/etc/storage/started_script.sh &");
+	system("/usr/bin/autostart.sh &");
 }
 
 /*
@@ -1305,6 +1306,12 @@ handle_notifications(void)
 		else if (strcmp(entry->d_name, RCN_RESTART_GFWLIST_UPD) == 0)
 		{
 			update_gfwlist();
+		}
+#endif
+#if defined(APP_ADGUARDHOME)
+		else if (strcmp(entry->d_name, RCN_RESTART_ADGUARDHOME) == 0)
+		{
+			restart_adguardhome();
 		}
 #endif
 #if defined(APP_VLMCSD)
