@@ -540,6 +540,11 @@ void restart_ss_tunnel(void);
 void update_chnroute(void);
 void update_gfwlist(void);
 #endif
+#if defined(APP_ADGUARDHOME)
+void stop_adguardhome(void);
+void start_adguardhome(void);
+void restart_adguardhome(void);
+#endif
 #if defined(APP_VLMCSD)
 void stop_vlmcsd(void);
 void start_vlmcsd(void);
