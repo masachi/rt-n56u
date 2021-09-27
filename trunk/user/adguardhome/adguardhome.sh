@@ -68,7 +68,7 @@ language: zh-cn
 rlimit_nofile: 0
 dns:
   bind_host: 0.0.0.0
-  port: 5335
+  port: 53
   protection_enabled: true
   filtering_enabled: true
   blocking_mode: nxdomain
