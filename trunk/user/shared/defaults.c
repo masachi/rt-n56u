@@ -409,6 +409,10 @@ struct nvram_pair router_defaults[] = {
 	{ "aria_ropen", "0" },
 	{ "hdd_spindt", "0" },
 	{ "hdd_apmoff", "0" },
+	
+	/* AdguargHome */
+	{ "adg_enable", "0" },
+	{ "adg_redirect", "0" },
 
 	{ "ip6_service", "" },
 	{ "ip6_ppe_on", "0" },
