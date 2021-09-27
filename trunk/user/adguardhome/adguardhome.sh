@@ -156,6 +156,7 @@ start_adg(){
 	if [ ! -f "/tmp/AdGuardHome/AdGuardHome" ]; then
 	dl_adg
 	fi
+	chmod +x /tmp/AdGuardHome/AdGuardHome
 	getconfig
 	change_dns
 # 	set_iptable
