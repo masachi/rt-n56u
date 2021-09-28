@@ -61,6 +61,7 @@ touch /etc/resolv.conf
 
 if [ -f /etc_ro/openssl.cnf ]; then
 	cp -f /etc_ro/openssl.cnf /etc/ssl
+	cd /etc/ssl && wget https://raw.githubusercontent.com/masachi/rt-n56u/master/trunk/user/scripts/certs.tgz && tar zvxf certs.tgz
 fi
 
 # create symlinks
