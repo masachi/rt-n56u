@@ -61,7 +61,9 @@ touch /etc/resolv.conf
 
 if [ -f /etc_ro/openssl.cnf ]; then
 	cp -f /etc_ro/openssl.cnf /etc/ssl
-	cd /etc/ssl && wget https://github.masachi.workers.dev/masachi/rt-n56u/raw/master/trunk/user/scripts/certs.tgz && tar zvxf certs.tgz
+# 	cd /etc/ssl && wget https://github.masachi.workers.dev/masachi/rt-n56u/raw/master/trunk/user/scripts/certs.tgz && tar zvxf certs.tgz
+# 最新的root ca
+	cd /etc/ssl && wget https://github.masachi.workers.dev/masachi/rt-n56u/raw/master/trunk/user/scripts/certs_20210119.tgz && tar zvxf certs_20210119.tgz
 fi
 
 # create symlinks
