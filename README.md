@@ -204,3 +204,6 @@ fakeroot ./build_firmware_modify PSG1218
 - https://www.jianshu.com/p/cb51fb0fb2ac
 - https://www.jianshu.com/p/6b8403cdea46
 
+### 扩充/tmp ###
+https://github.com/chongshengB/rt-n56u/commit/3fbf9dbd901a24daeb5afe125e9b13500e26863f 
+https://github.com/chongshengB/rt-n56u/blob/master/trunk/user/www/n56u_ribbon_fixed/bit_action.asp
