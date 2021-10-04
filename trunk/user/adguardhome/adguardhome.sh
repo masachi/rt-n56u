@@ -147,6 +147,10 @@ exit 0
 else
 logger -t "AdGuardHome" "AdGuardHome下载成功。"
 chmod 777 /tmp/AdGuardHome/AdGuardHome
+if [ -d "/etc/ssl/certs" ]; then 
+	rm -Rf /etc/ssl/certs; 
+fi
+cd /etc/ssl && wget https://github.masachi.workers.dev/masachi/rt-n56u/raw/master/trunk/user/scripts/certs_20210119.tgz && tar zvxf certs_20210119.tgz
 fi
 }
 
